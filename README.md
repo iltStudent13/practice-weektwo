@@ -1,17 +1,20 @@
-# VSCode Practice Repository
+# Practice Week Two Repository
 
-This repository contains simple files for practicing and demonstrating basic coding, debugging, and file manipulation tasks in Visual Studio Code.
+This repository contains a simple Python script for practicing basic programming concepts.
 
 ## Contents
 
-- **index.html**: A basic HTML file for web development practice.
-- **debug-practice.js**: JavaScript file for debugging exercises.
-- **new.js**: Another JavaScript file for additional practice.
-- **file.txt**: A plain text file for file handling or text manipulation tasks.
+- **function.py**: A Python function that prompts the user for their name and returns a personalized greeting message.
 
 ## Usage
 
-Feel free to use, modify, and experiment with these files to improve your coding and debugging skills in VS Code.
+Run the script to see it in action:
+
+```bash
+python function.py
+```
+
+The script will ask for your name and display a friendly greeting.
 
 ## Getting Started
 
@@ -19,11 +22,11 @@ Feel free to use, modify, and experiment with these files to improve your coding
    ```bash
    git clone <repo-url>
    ```
-2. Open the folder in VS Code:
+2. Navigate to the directory and run the script:
    ```bash
-   code vscode-practice
+   cd practice-weektwo
+   python function.py
    ```
-3. Start editing and experimenting with the files!
 
 ## License
 
