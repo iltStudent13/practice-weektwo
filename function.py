@@ -13,6 +13,9 @@ def get_user_name() -> str:
     elif initial_input.isdigit():
         print("Please enter a string value for your name, not just numbers.")
         return get_user_name()
+    elif len(initial_input.strip()) < 2:
+        print("Name must be at least 2 characters long.")
+        return get_user_name()
     else:
         name = initial_input.strip()
     printname = f"Hello {name}! Have a great day."
