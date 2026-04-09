@@ -4,7 +4,7 @@ This repository contains a simple Python script for practicing basic programming
 
 ## Contents
 
-- **function.py**: A Python function that prompts the user for their name and returns a personalized greeting message.
+- **function.py**: A Python function that prompts the user for their name, validates the input (ensuring it's not empty, whitespace-only, or purely numeric), and returns a personalized greeting message.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Run the script to see it in action:
 python function.py
 ```
 
-The script will ask for your name and display a friendly greeting.
+The script will ask for your name, validate the input to ensure it's a valid string (not empty, not just spaces, and not purely numeric), and display a friendly greeting. If invalid input is provided, it will prompt again.
 
 ## Getting Started
 
