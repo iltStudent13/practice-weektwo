@@ -4,7 +4,7 @@ def get_user_name() -> str:
     """This function will ask the user for their name and return it as a string.
     
     Returns:
-        str: Greeting message with the user's name.
+        str: The user's name.
 
     """
     initial_input = input("What is your name? ")
@@ -20,10 +20,8 @@ def get_user_name() -> str:
         return get_user_name()
     else:
         name = initial_input.strip()
-    printname = f"Hello {name}! Have a great day."
-    return printname
+    return name
 
-#Function looks up the name in the namelist and returns a special greeting
 def lookup_name(name: str) -> bool:
     """This function will look up the name in the namelist and return a boolean indicating whether the name is in the list or not.
     
@@ -34,5 +32,20 @@ def lookup_name(name: str) -> bool:
     """
     return name.lower() in namelist
 
+def special_greeting() -> str:
+    """This function will return a special greeting message if the name is in the namelist, otherwise it will return a generic greeting message.
+    
+    Args:Nate
+        name (str): The name to look up.
+    Returns:
+        str: A special greeting message if the name is in the namelist, otherwise a generic greeting message.
+    """
+    name = get_user_name()
+
+    if lookup_name(name):
+        return f"Hello {name}! You are on the list!"
+    else:
+        return f"Hello {name}! Nice to meet you!"
+
 if __name__ == "__main__":
-    print(get_user_name())
+    print(special_greeting())
