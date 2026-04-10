@@ -1,3 +1,5 @@
+from constants import namelist
+
 def get_user_name() -> str:
     """This function will ask the user for their name and return it as a string.
     
@@ -20,6 +22,17 @@ def get_user_name() -> str:
         name = initial_input.strip()
     printname = f"Hello {name}! Have a great day."
     return printname
+
+#Function looks up the name in the namelist and returns a special greeting
+def lookup_name(name: str) -> bool:
+    """This function will look up the name in the namelist and return a boolean indicating whether the name is in the list or not.
+    
+    Args:
+        name (str): The name to look up.
+    Returns:
+        boolean: True if the name is in the namelist, False otherwise.
+    """
+    return name.lower() in namelist
 
 if __name__ == "__main__":
     print(get_user_name())
